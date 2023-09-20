@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		9934FE834D244763837FC218 /* ZERO_CHECK */ = {
+		A366AB2F27FA4F3B9E886D00 /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 963AF5DAE35D4A92913D591A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 611D494BE0EC439C94238374 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
 				73A36948E16BEFE14C1521E9 /* Generate CMakeFiles/ZERO_CHECK */,
 			);
@@ -18,15 +18,15 @@
 			name = ZERO_CHECK;
 			productName = ZERO_CHECK;
 		};
-		A9B653EE8381414EB44EE220 /* ALL_BUILD */ = {
+		A8F6D955297F437894189391 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 06464CF430A648F583C97FB4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = FDCF4543A575460E9693A079 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
 				792CBFA70785E54A1A33F9EA /* Generate CMakeFiles/ALL_BUILD */,
 			);
 			dependencies = (
-				4918E2E0150B414A88A018B9 /* PBXTargetDependency */,
-				FC6DBE7C0579424B8CFD84AE /* PBXTargetDependency */,
+				A79B0274225D453EA955748F /* PBXTargetDependency */,
+				9F56630FCECA49418199A929 /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
@@ -34,51 +34,94 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		242A9BB879494C22ACF53054 /* cargame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A58E8B96A1BB4ABBB7D4753D /* cargame.cpp */; };
-		AA42F1782ABB1CA100DA5780 /* ComputerCar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA42F1762ABB1CA100DA5780 /* ComputerCar.cpp */; };
-		AA51B5D82ABA437A008C0A3C /* PlayersCar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA51B5D62ABA437A008C0A3C /* PlayersCar.cpp */; };
-		AA51B5DB2ABA54E5008C0A3C /* Potholes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AA51B5D92ABA54E5008C0A3C /* Potholes.cpp */; };
+		1F5348FE855D43E197E6551A /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/PlayersCar.cpp */ = {isa = PBXBuildFile; fileRef = C62A045D838D459AA1D61520 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/PlayersCar.cpp */; };
+		29D613089DBF45F2B3BE94C5 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/ComputerCar.cpp */ = {isa = PBXBuildFile; fileRef = 6D2D7FEB120544CE86CB0B68 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/ComputerCar.cpp */; };
+		46C38BE5BD504399B738AC0B /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/world.hpp */ = {isa = PBXBuildFile; fileRef = 5682D2B54B24408B90739B82 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/world.hpp */; };
+		5DE22A1E36744C4F89156642 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/animals.cpp */ = {isa = PBXBuildFile; fileRef = 8D57CB702187477AB978E489 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/animals.cpp */; };
+		5F1851761262482F9FA327D3 /* /Users/zachallred/desktop/CS6010Project/cs1610game/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 53EA658CCC644E2CA8C13EF3 /* /Users/zachallred/desktop/CS6010Project/cs1610game/CMakeLists.txt */; };
+		691074C032FF4AAA8CE5691C /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/Potholes.hpp */ = {isa = PBXBuildFile; fileRef = 9D2F5C3512AB4E25AAFDF59C /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/Potholes.hpp */; };
+		6A636B946624482D83D5291E /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/animals.hpp */ = {isa = PBXBuildFile; fileRef = A7AB95F241AA41DA960F606F /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/animals.hpp */; };
+		89F06455733B40C0986E0ED2 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/ComputerCar.hpp */ = {isa = PBXBuildFile; fileRef = CEC99A9957524EC3B8D63F61 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/ComputerCar.hpp */; };
+		A178C979F0504B5EB75F4185 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/PlayersCar.hpp */ = {isa = PBXBuildFile; fileRef = CEC8620440D74832991F1CE1 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/PlayersCar.hpp */; };
+		BC07AF46D6B34D55911E2FEB /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/Potholes.cpp */ = {isa = PBXBuildFile; fileRef = 0718A4E118374CF080B6FACA /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/Potholes.cpp */; };
+		F0109F8FBAF243399705DFB8 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/cargame.cpp */ = {isa = PBXBuildFile; fileRef = 1BF96CBC5CF04EB5928D55A7 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/cargame.cpp */; };
+		F48A1C6FECE84FF4894B2392 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/world.cpp */ = {isa = PBXBuildFile; fileRef = 55215BEBB57B4EC381E86CD9 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/world.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildStyle section */
+		3B8ADA6EE672460DABB9FD1D /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		A9BFF3E600D74BC8938C9C9D /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		F16B413F96AF43F192B637DE /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		FB0C10E04F6749CD8BAFBA07 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
 /* Begin PBXContainerItemProxy section */
-		76FF26D204C04C0BA86D8419 /* PBXContainerItemProxy */ = {
+		5027C169A7FD416085BAC691 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 71B229F22A994C16B611C3BF /* Project object */;
+			containerPortal = 14F10C09A1574AFEB78EB683 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CEDC8E10F90A48ABB305D308;
+			remoteGlobalIDString = A366AB2F27FA4F3B9E886D00;
+			remoteInfo = ZERO_CHECK;
+		};
+		62495C80C355437385C29D19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14F10C09A1574AFEB78EB683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A366AB2F27FA4F3B9E886D00;
+			remoteInfo = ZERO_CHECK;
+		};
+		A66B0BB547514D6F8508EB0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14F10C09A1574AFEB78EB683 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BB1C022746E4D80AB8ACBB8;
 			remoteInfo = carracing;
-		};
-		8864A7AE8E7D49469505CC73 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71B229F22A994C16B611C3BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9934FE834D244763837FC218;
-			remoteInfo = ZERO_CHECK;
-		};
-		F2FFA774513A4D768A3C0905 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71B229F22A994C16B611C3BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9934FE834D244763837FC218;
-			remoteInfo = ZERO_CHECK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		074ECDC6D53E406D8964030C /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		44A8DF5FED274E6397D5711B /* carracing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = carracing; sourceTree = BUILT_PRODUCTS_DIR; };
-		97AAC33351EE4D6689442DFD /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		A58E8B96A1BB4ABBB7D4753D /* cargame.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cargame.cpp; path = src/cargame.cpp; sourceTree = SOURCE_ROOT; };
-		AA42F1762ABB1CA100DA5780 /* ComputerCar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ComputerCar.cpp; path = ../../../Desktop/CS6010Project/cs1610game/src/ComputerCar.cpp; sourceTree = "<group>"; };
-		AA42F1772ABB1CA100DA5780 /* ComputerCar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = ComputerCar.hpp; path = ../../../Desktop/CS6010Project/cs1610game/src/ComputerCar.hpp; sourceTree = "<group>"; };
-		AA51B5D62ABA437A008C0A3C /* PlayersCar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PlayersCar.cpp; path = ../../../Desktop/CS6010Project/cs1610game/src/PlayersCar.cpp; sourceTree = "<group>"; };
-		AA51B5D72ABA437A008C0A3C /* PlayersCar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = PlayersCar.hpp; path = ../../../Desktop/CS6010Project/cs1610game/src/PlayersCar.hpp; sourceTree = "<group>"; };
-		AA51B5D92ABA54E5008C0A3C /* Potholes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Potholes.cpp; path = ../../../Desktop/CS6010Project/cs1610game/src/Potholes.cpp; sourceTree = "<group>"; };
-		AA51B5DA2ABA54E5008C0A3C /* Potholes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Potholes.hpp; path = ../../../Desktop/CS6010Project/cs1610game/src/Potholes.hpp; sourceTree = "<group>"; };
+		0718A4E118374CF080B6FACA /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/Potholes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Potholes.cpp; path = src/Potholes.cpp; sourceTree = SOURCE_ROOT; };
+		15D95177CAD542B8A8083343 /* /Users/zachallred/desktop/CS6010Project/cs1610game/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1BF96CBC5CF04EB5928D55A7 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/cargame.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cargame.cpp; path = src/cargame.cpp; sourceTree = SOURCE_ROOT; };
+		2204E94E925B432FAB23608B /* carracing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = carracing; sourceTree = BUILT_PRODUCTS_DIR; };
+		53EA658CCC644E2CA8C13EF3 /* /Users/zachallred/desktop/CS6010Project/cs1610game/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		55215BEBB57B4EC381E86CD9 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/world.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = world.cpp; path = src/world.cpp; sourceTree = SOURCE_ROOT; };
+		5682D2B54B24408B90739B82 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/world.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = world.hpp; path = src/world.hpp; sourceTree = SOURCE_ROOT; };
+		6D2D7FEB120544CE86CB0B68 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/ComputerCar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ComputerCar.cpp; path = src/ComputerCar.cpp; sourceTree = SOURCE_ROOT; };
+		8D57CB702187477AB978E489 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/animals.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = animals.cpp; path = src/animals.cpp; sourceTree = SOURCE_ROOT; };
+		9D2F5C3512AB4E25AAFDF59C /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/Potholes.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Potholes.hpp; path = src/Potholes.hpp; sourceTree = SOURCE_ROOT; };
+		A7AB95F241AA41DA960F606F /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/animals.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = animals.hpp; path = src/animals.hpp; sourceTree = SOURCE_ROOT; };
+		C62A045D838D459AA1D61520 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/PlayersCar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PlayersCar.cpp; path = src/PlayersCar.cpp; sourceTree = SOURCE_ROOT; };
+		CEC8620440D74832991F1CE1 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/PlayersCar.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PlayersCar.hpp; path = src/PlayersCar.hpp; sourceTree = SOURCE_ROOT; };
+		CEC99A9957524EC3B8D63F61 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/ComputerCar.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ComputerCar.hpp; path = src/ComputerCar.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3E0DB2E6118842F7B2C01930 /* Frameworks */ = {
+		12A5A8D8995F41F988258F0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,118 +131,149 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16AB8C1ECD7344B9A2741A23 /* Source Files */ = {
+		1EA81D75FCE24D9EB06300AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A58E8B96A1BB4ABBB7D4753D /* cargame.cpp */,
-				AA42F1772ABB1CA100DA5780 /* ComputerCar.hpp */,
-				AA42F1762ABB1CA100DA5780 /* ComputerCar.cpp */,
-				AA51B5D92ABA54E5008C0A3C /* Potholes.cpp */,
-				AA51B5DA2ABA54E5008C0A3C /* Potholes.hpp */,
-				AA51B5D62ABA437A008C0A3C /* PlayersCar.cpp */,
-				AA51B5D72ABA437A008C0A3C /* PlayersCar.hpp */,
+				2204E94E925B432FAB23608B /* carracing */,
 			);
-			name = "Source Files";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		22BEF484B2444D9BADF1EF61 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				A355975378EC452080FA4D08 /* CMake Rules */,
-				97AAC33351EE4D6689442DFD /* CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		2F8B85C577EA4EE5A3856F4A = {
-			isa = PBXGroup;
-			children = (
-				CD3F0C4489B244A58055791B /* carracing */,
-				22BEF484B2444D9BADF1EF61 /* ALL_BUILD */,
-				F06FE87172C94273B8FE59A6 /* Products */,
-				3A4ACE31C3F648899E8477F0 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		3A4ACE31C3F648899E8477F0 /* Frameworks */ = {
+		24A6F95F51134094A61EB24B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A355975378EC452080FA4D08 /* CMake Rules */ = {
+		40677C7250024A368F65E482 /* carracing */ = {
+			isa = PBXGroup;
+			children = (
+				E73510D46F7648C88EDDF30D /* Source Files */,
+				526ED94E32914519895CE051 /* Header Files */,
+				53EA658CCC644E2CA8C13EF3 /* /Users/zachallred/desktop/CS6010Project/cs1610game/CMakeLists.txt */,
+			);
+			name = carracing;
+			sourceTree = "<group>";
+		};
+		526ED94E32914519895CE051 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEC99A9957524EC3B8D63F61 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/ComputerCar.hpp */,
+				CEC8620440D74832991F1CE1 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/PlayersCar.hpp */,
+				9D2F5C3512AB4E25AAFDF59C /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/Potholes.hpp */,
+				A7AB95F241AA41DA960F606F /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/animals.hpp */,
+				5682D2B54B24408B90739B82 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/world.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		7F557D57658146018FDAE76E /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				9B3A3A7919CB47D5A72C8496 /* CMake Rules */,
+				15D95177CAD542B8A8083343 /* /Users/zachallred/desktop/CS6010Project/cs1610game/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		9B3A3A7919CB47D5A72C8496 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		CD3F0C4489B244A58055791B /* carracing */ = {
+		E73510D46F7648C88EDDF30D /* Source Files */ = {
 			isa = PBXGroup;
 			children = (
-				16AB8C1ECD7344B9A2741A23 /* Source Files */,
-				074ECDC6D53E406D8964030C /* CMakeLists.txt */,
+				6D2D7FEB120544CE86CB0B68 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/ComputerCar.cpp */,
+				C62A045D838D459AA1D61520 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/PlayersCar.cpp */,
+				0718A4E118374CF080B6FACA /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/Potholes.cpp */,
+				8D57CB702187477AB978E489 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/animals.cpp */,
+				1BF96CBC5CF04EB5928D55A7 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/cargame.cpp */,
+				55215BEBB57B4EC381E86CD9 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/world.cpp */,
 			);
-			name = carracing;
+			name = "Source Files";
 			sourceTree = "<group>";
 		};
-		F06FE87172C94273B8FE59A6 /* Products */ = {
+		F0A08B7D01324277A7DDBEC9 = {
 			isa = PBXGroup;
 			children = (
-				44A8DF5FED274E6397D5711B /* carracing */,
+				40677C7250024A368F65E482 /* carracing */,
+				7F557D57658146018FDAE76E /* ALL_BUILD */,
+				1EA81D75FCE24D9EB06300AF /* Products */,
+				24A6F95F51134094A61EB24B /* Frameworks */,
 			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEDC8E10F90A48ABB305D308 /* carracing */ = {
+		0BB1C022746E4D80AB8ACBB8 /* carracing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75FCF5FA9E864CE3A2657A3E /* Build configuration list for PBXNativeTarget "carracing" */;
+			buildConfigurationList = 67D41BD0570F42D18787984B /* Build configuration list for PBXNativeTarget "carracing" */;
 			buildPhases = (
-				B0F9462E325648EB808362B5 /* Sources */,
-				3E0DB2E6118842F7B2C01930 /* Frameworks */,
+				EBE2FA5F3200447CB499FDE9 /* Sources */,
+				12A5A8D8995F41F988258F0D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F985B88763294AEE9E116C88 /* PBXTargetDependency */,
+				30D67C3174D6430CB81D676A /* PBXTargetDependency */,
 			);
 			name = carracing;
 			productName = carracing;
-			productReference = 44A8DF5FED274E6397D5711B /* carracing */;
+			productReference = 2204E94E925B432FAB23608B /* carracing */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		71B229F22A994C16B611C3BF /* Project object */ = {
+		14F10C09A1574AFEB78EB683 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 			};
-			buildConfigurationList = 4062A0A4AB964BBEB8EDB1E3 /* Build configuration list for PBXProject "carracing" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
+			buildConfigurationList = 17778146AEA84FC69DE3138B /* Build configuration list for PBXProject "carracing" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				A9BFF3E600D74BC8938C9C9D /* Debug */,
+				FB0C10E04F6749CD8BAFBA07 /* Release */,
+				3B8ADA6EE672460DABB9FD1D /* MinSizeRel */,
+				F16B413F96AF43F192B637DE /* RelWithDebInfo */,
 			);
-			mainGroup = 2F8B85C577EA4EE5A3856F4A;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = F0A08B7D01324277A7DDBEC9;
 			projectDirPath = /Users/zachallred/desktop/CS6010Project/cs1610game;
 			projectRoot = "";
 			targets = (
-				A9B653EE8381414EB44EE220 /* ALL_BUILD */,
-				9934FE834D244763837FC218 /* ZERO_CHECK */,
-				CEDC8E10F90A48ABB305D308 /* carracing */,
+				A8F6D955297F437894189391 /* ALL_BUILD */,
+				A366AB2F27FA4F3B9E886D00 /* ZERO_CHECK */,
+				0BB1C022746E4D80AB8ACBB8 /* carracing */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
 		73A36948E16BEFE14C1521E9 /* Generate CMakeFiles/ZERO_CHECK */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -210,11 +284,27 @@
 			);
 			name = "Generate CMakeFiles/ZERO_CHECK";
 			outputPaths = (
-				/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeFiles/ZERO_CHECK,
-			);
+/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeFiles/ZERO_CHECK			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode\n  make -f /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode\n  make -f /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode\n  make -f /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode\n  make -f /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeScripts/ReRunCMake.make\nfi\n";
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode
+  make -f /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode
+  make -f /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode
+  make -f /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode
+  make -f /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeScripts/ReRunCMake.make
+fi
+";
 			showEnvVarsInLog = 0;
 		};
 		792CBFA70785E54A1A33F9EA /* Generate CMakeFiles/ALL_BUILD */ = {
@@ -227,97 +317,92 @@
 			);
 			name = "Generate CMakeFiles/ALL_BUILD";
 			outputPaths = (
-				/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeFiles/ALL_BUILD,
+/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"MinSizeRel\"; then :\n  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :\n  cd /Users/zachallred/desktop/CS6010Project/cs1610game/xcode\n  echo Build\\ all\\ projects\nfi\n";
+			shellScript = "# shell script goes here
+exit 0";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B0F9462E325648EB808362B5 /* Sources */ = {
+		EBE2FA5F3200447CB499FDE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				242A9BB879494C22ACF53054 /* cargame.cpp in Sources */,
-				AA42F1782ABB1CA100DA5780 /* ComputerCar.cpp in Sources */,
-				AA51B5D82ABA437A008C0A3C /* PlayersCar.cpp in Sources */,
-				AA51B5DB2ABA54E5008C0A3C /* Potholes.cpp in Sources */,
+				29D613089DBF45F2B3BE94C5 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/ComputerCar.cpp */,
+				1F5348FE855D43E197E6551A /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/PlayersCar.cpp */,
+				BC07AF46D6B34D55911E2FEB /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/Potholes.cpp */,
+				5DE22A1E36744C4F89156642 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/animals.cpp */,
+				F0109F8FBAF243399705DFB8 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/cargame.cpp */,
+				F48A1C6FECE84FF4894B2392 /* /Users/zachallred/desktop/CS6010Project/cs1610game/src/world.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4918E2E0150B414A88A018B9 /* PBXTargetDependency */ = {
+		30D67C3174D6430CB81D676A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CEDC8E10F90A48ABB305D308 /* carracing */;
-			targetProxy = 76FF26D204C04C0BA86D8419 /* PBXContainerItemProxy */;
+			target = A366AB2F27FA4F3B9E886D00 /* ZERO_CHECK */;
+			targetProxy = 62495C80C355437385C29D19 /* PBXContainerItemProxy */;
 		};
-		F985B88763294AEE9E116C88 /* PBXTargetDependency */ = {
+		9F56630FCECA49418199A929 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9934FE834D244763837FC218 /* ZERO_CHECK */;
-			targetProxy = F2FFA774513A4D768A3C0905 /* PBXContainerItemProxy */;
+			target = A366AB2F27FA4F3B9E886D00 /* ZERO_CHECK */;
+			targetProxy = 5027C169A7FD416085BAC691 /* PBXContainerItemProxy */;
 		};
-		FC6DBE7C0579424B8CFD84AE /* PBXTargetDependency */ = {
+		A79B0274225D453EA955748F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9934FE834D244763837FC218 /* ZERO_CHECK */;
-			targetProxy = 8864A7AE8E7D49469505CC73 /* PBXContainerItemProxy */;
+			target = 0BB1C022746E4D80AB8ACBB8 /* carracing */;
+			targetProxy = A66B0BB547514D6F8508EB0F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2361761CB5E845898DEC5F3B /* RelWithDebInfo */ = {
+		02C006F738644C5A96FB66A2 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/RelWithDebInfo;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					/opt/homebrew/lib,
-					"$(inherited)",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=c++17'",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					"/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib",
-					"/opt/homebrew/lib/libsfml-window.2.6.0.dylib",
-					"/opt/homebrew/lib/libsfml-system.2.6.0.dylib",
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = carracing;
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (
-					/opt/homebrew/include,
-					"$(inherited)",
-				);
-				TARGET_TEMP_DIR = "/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build/carracing.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build;
 			};
 			name = RelWithDebInfo;
 		};
-		2672A1CB076641E2A2F956D3 /* MinSizeRel */ = {
+		04D26266865547279A9F41E5 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -326,23 +411,115 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		102FAF9873C5425DB7C7B3A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		138F2487322447529F761C92 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build;
+			};
+			name = MinSizeRel;
+		};
+		25AE339D6CE4469E9530D625 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
-			name = MinSizeRel;
+			name = RelWithDebInfo;
 		};
-		3EB2FD063E8E443997C2D2B8 /* Release */ = {
+		31C214EBA21B457BAB39D79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SYMROOT = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build;
+			};
+			name = Debug;
+		};
+		37D7B3EF5ED84102AEC7ED59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		456DC9D10CBF433BA045AFAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build;
+			};
+			name = Release;
+		};
+		49B29DE13DBB4D2496878FE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -354,113 +531,24 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					/opt/homebrew/lib,
-					"$(inherited)",
-				);
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=c++17'",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					"/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib",
-					"/opt/homebrew/lib/libsfml-window.2.6.0.dylib",
-					"/opt/homebrew/lib/libsfml-system.2.6.0.dylib",
-					"$(inherited)",
-				);
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib","/opt/homebrew/lib/libsfml-window.2.6.0.dylib","/opt/homebrew/lib/libsfml-system.2.6.0.dylib","$(inherited)");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = carracing;
 				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (
-					/opt/homebrew/include,
-					"$(inherited)",
-				);
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
 				TARGET_TEMP_DIR = "/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build/carracing.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Release;
 		};
-		7CB9753CC93249A7AA4B0D9B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_BUILD_DIR = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/Debug;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					/opt/homebrew/lib,
-					"$(inherited)",
-				);
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = "   '-std=c++17' ";
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					"/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib",
-					"/opt/homebrew/lib/libsfml-window.2.6.0.dylib",
-					"/opt/homebrew/lib/libsfml-system.2.6.0.dylib",
-					"$(inherited)",
-				);
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = carracing;
-				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (
-					/opt/homebrew/include,
-					"$(inherited)",
-				);
-				TARGET_TEMP_DIR = "/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build/carracing.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Debug;
-		};
-		825ADA311488464F91F8DD72 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Release;
-		};
-		A7EDD6508D0E4EF2AC3BB99A /* MinSizeRel */ = {
+		4A514E195666483A80D3DA84 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -472,52 +560,24 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					/opt/homebrew/lib,
-					"$(inherited)",
-				);
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CPLUSPLUSFLAGS = (
-					"-DNDEBUG",
-					"'-std=c++17'",
-				);
-				OTHER_LDFLAGS = (
-					"-Wl,-search_paths_first",
-					"-Wl,-headerpad_max_install_names",
-					"/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib",
-					"/opt/homebrew/lib/libsfml-window.2.6.0.dylib",
-					"/opt/homebrew/lib/libsfml-system.2.6.0.dylib",
-					"$(inherited)",
-				);
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=c++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib","/opt/homebrew/lib/libsfml-window.2.6.0.dylib","/opt/homebrew/lib/libsfml-system.2.6.0.dylib","$(inherited)");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = carracing;
 				SECTORDER_FLAGS = "";
-				SYSTEM_HEADER_SEARCH_PATHS = (
-					/opt/homebrew/include,
-					"$(inherited)",
-				);
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
 				TARGET_TEMP_DIR = "/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build/carracing.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
 		};
-		B8E2694F5A4349A591C0B756 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SYMROOT = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build;
-			};
-			name = Debug;
-		};
-		C3CF26622457409EAB0312A3 /* Release */ = {
+		520141954BC54FDDB1570943 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -526,83 +586,122 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		71212B3207514970AAF81440 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9C69D5A36BC040919D4EC1D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Release;
 		};
-		C93647E01F9249FBA3391EA7 /* RelWithDebInfo */ = {
+		CAA421A986B34A1086ECA6D1 /* RelWithDebInfo */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=c++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib","/opt/homebrew/lib/libsfml-window.2.6.0.dylib","/opt/homebrew/lib/libsfml-system.2.6.0.dylib","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = carracing;
 				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build/carracing.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = RelWithDebInfo;
 		};
-		DCE6C7467FE14B26A3D3FC4E /* Debug */ = {
+		D378A2FA4D2B4D358372A62D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = arm64;
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/opt/homebrew/lib,"$(inherited)");
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=c++17' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","/opt/homebrew/lib/libsfml-graphics.2.6.0.dylib","/opt/homebrew/lib/libsfml-window.2.6.0.dylib","/opt/homebrew/lib/libsfml-system.2.6.0.dylib","$(inherited)");
 				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
+				PRODUCT_NAME = carracing;
 				SECTORDER_FLAGS = "";
+				SYSTEM_HEADER_SEARCH_PATHS = (/opt/homebrew/include,"$(inherited)");
+				TARGET_TEMP_DIR = "/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build/carracing.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = Debug;
 		};
-		DE8FD7A6473B46448A159BBD /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build;
-			};
-			name = MinSizeRel;
-		};
-		E0AB3B0E3BC74228A775C92D /* Debug */ = {
+		F53B2760D445456DAED2098C /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -611,140 +710,67 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INSTALL_PATH = "";
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_LDFLAGS = ("","$(inherited)");
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = ALL_BUILD;
 				SECTORDER_FLAGS = "";
 				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = Debug;
-		};
-		E272547185444AA6A8E910B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build;
-			};
-			name = Release;
-		};
-		F70C3814D2CA44A3AB2A1AD3 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
+				WARNING_CFLAGS = ("$(inherited)");
 			};
 			name = MinSizeRel;
-		};
-		FC3229A66D764191922D5911 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = arm64;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SYMROOT = /Users/zachallred/desktop/CS6010Project/cs1610game/xcode/build;
-			};
-			name = RelWithDebInfo;
-		};
-		FE0C3224ED24415AA0044208 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = arm64;
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				INSTALL_PATH = "";
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = " $(inherited)";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = "$(inherited)";
-			};
-			name = RelWithDebInfo;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06464CF430A648F583C97FB4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		17778146AEA84FC69DE3138B /* Build configuration list for PBXProject "carracing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E0AB3B0E3BC74228A775C92D /* Debug */,
-				C3CF26622457409EAB0312A3 /* Release */,
-				2672A1CB076641E2A2F956D3 /* MinSizeRel */,
-				FE0C3224ED24415AA0044208 /* RelWithDebInfo */,
+				31C214EBA21B457BAB39D79E /* Debug */,
+				456DC9D10CBF433BA045AFAB /* Release */,
+				138F2487322447529F761C92 /* MinSizeRel */,
+				02C006F738644C5A96FB66A2 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		4062A0A4AB964BBEB8EDB1E3 /* Build configuration list for PBXProject "carracing" */ = {
+		611D494BE0EC439C94238374 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8E2694F5A4349A591C0B756 /* Debug */,
-				E272547185444AA6A8E910B9 /* Release */,
-				DE8FD7A6473B46448A159BBD /* MinSizeRel */,
-				FC3229A66D764191922D5911 /* RelWithDebInfo */,
+				102FAF9873C5425DB7C7B3A1 /* Debug */,
+				37D7B3EF5ED84102AEC7ED59 /* Release */,
+				04D26266865547279A9F41E5 /* MinSizeRel */,
+				71212B3207514970AAF81440 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		75FCF5FA9E864CE3A2657A3E /* Build configuration list for PBXNativeTarget "carracing" */ = {
+		67D41BD0570F42D18787984B /* Build configuration list for PBXNativeTarget "carracing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7CB9753CC93249A7AA4B0D9B /* Debug */,
-				3EB2FD063E8E443997C2D2B8 /* Release */,
-				A7EDD6508D0E4EF2AC3BB99A /* MinSizeRel */,
-				2361761CB5E845898DEC5F3B /* RelWithDebInfo */,
+				D378A2FA4D2B4D358372A62D /* Debug */,
+				49B29DE13DBB4D2496878FE7 /* Release */,
+				4A514E195666483A80D3DA84 /* MinSizeRel */,
+				CAA421A986B34A1086ECA6D1 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		963AF5DAE35D4A92913D591A /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		FDCF4543A575460E9693A079 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCE6C7467FE14B26A3D3FC4E /* Debug */,
-				825ADA311488464F91F8DD72 /* Release */,
-				F70C3814D2CA44A3AB2A1AD3 /* MinSizeRel */,
-				C93647E01F9249FBA3391EA7 /* RelWithDebInfo */,
+				520141954BC54FDDB1570943 /* Debug */,
+				9C69D5A36BC040919D4EC1D8 /* Release */,
+				F53B2760D445456DAED2098C /* MinSizeRel */,
+				25AE339D6CE4469E9530D625 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 71B229F22A994C16B611C3BF /* Project object */;
+	rootObject = 14F10C09A1574AFEB78EB683 /* Project object */;
 }
