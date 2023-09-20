@@ -1,0 +1,43 @@
+//
+//  Potholes.hpp
+//  carracing
+//
+//  Created by Zach Allred on 9/19/23.
+//
+
+#ifndef Potholes_hpp
+#define Potholes_hpp
+#include <stdio.h>
+#pragma once
+#include <SFML/Graphics.hpp>
+ 
+class Pothole
+{
+private:
+    sf::Vector2f position;
+ 
+    // A RectangleShape object called ref
+    sf::CircleShape holeShape;
+ 
+    float xVelocity = .2f;
+    float yVelocity = .1f;
+ 
+public:
+    Pothole(float startX, float startY);
+ 
+    sf::FloatRect getPosition();
+ 
+    sf::CircleShape getShape();
+ 
+    float getXVelocity();
+ 
+    void reboundSides();
+ 
+    void reboundBatOrTop();
+ 
+    void hitBottom();
+ 
+    void update();
+ 
+};
+#endif /* Potholes_hpp */
