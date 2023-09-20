@@ -1,34 +1,93 @@
 #include <SFML/Graphics.hpp>
+#include <stdio.h>
+#include <string>
+#include <vector>
+#include <stdio.h>
+#include <cassert>
+#include <iostream>
+#include "world.hpp"
+#include "animals.hpp"
+#include <SFML/Graphics.hpp>
+#include "PlayersCar.hpp"
+#include "ComputerCar.hpp"
 
 int main()
 {
-    // create the window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
+    sf::RenderWindow window(sf::VideoMode(800, 1100), "Road with Stripe");
 
-    // run the program as long as the window is open
+    Road road(800, 1100, .07f);
+    Animal animal(800, 600, 0.01f);
+    PlayerCar playercar (windowWidth / 2, windowHeight/ 2);
+    ComputerCar computerCar (windowWidth / 2, 1);
+    ComputerCar computerCar2 (windowWidth / 2, 10);
     while (window.isOpen())
-    {
-        // check all the window's events that were triggered since the last iteration of the loop
-        sf::Event event;
-        while (window.pollEvent(event))
         {
-            // "close requested" event: we close the window
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
+            sf::Event event;
+            while (window.isOpen()) {
+                  sf::Event event;
+                  while (window.pollEvent(event)) {
+                      if (event.type == sf::Event::Closed) {
+                          window.close();
+                      }
+                  }
 
-        // clear the window with black color
-        window.clear(sf::Color::Black);
-
-	sf::CircleShape shape(50.f);
-
-// set the shape color to green
-shape.setFillColor(sf::Color(100, 250, 50));
-
- window.draw(shape);
-	// end the current frame
-        window.display();
+            
+            playercar.Movement(window);
+            
+    
+    if (computerCar.getPosition().top > windowHeight)
+    {
+        // reverse the ball direction
+        computerCar.hitBottom();
+        
+        // Remove a life
+        score +=10;
+        
     }
+    
+    if (computerCar.getPosition().top < 0)
+    {
+        computerCar.reboundBatOrTop();
+        
+        // Add a point to the players score
+        score++;
+        
+    }
+            
+    if (computerCar.getPosition().left < 0 || computerCar.getPosition().left + 10 > windowWidth)
+    {
+        computerCar.reboundSides();
+    }
+            
+    if (computerCar.getPosition().intersects(playercar.getPosition()))
+    {
+        lives--;
+        if (lives < 1) {
+            // reset the score
+            score = 0;
+            // reset the lives
+            lives = 3;
+        }
+    }
+    
+    computerCar.update();
+    playercar.update();
+     
+    
+    // Clear everything from the last frame
+    window.clear(sf::Color(0, 0, 0));
+    road.moveStripes(); // Move the stripes
+    road.draw(window);
+    animal.draw(window);
+    animal.move();
+                  
 
+    window.draw(computerCar.getShape());
+
+    window.draw(playercar.getShape());
+
+    // Show everything we just drew
+    window.display();
+}// This is the end of the "while" loop
     return 0;
 }

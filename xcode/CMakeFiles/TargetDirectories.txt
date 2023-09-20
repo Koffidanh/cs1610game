@@ -1,3 +1,3 @@
-/Users/koffidanhounsrou/desktop/cs1610project/xcode/CMakeFiles/carracing.dir
-/Users/koffidanhounsrou/desktop/cs1610project/xcode/CMakeFiles/ALL_BUILD.dir
-/Users/koffidanhounsrou/desktop/cs1610project/xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/koffidanhounsrou/desktop/CS6010Project/cs1610game/xcode/CMakeFiles/carracing.dir
+/Users/koffidanhounsrou/desktop/CS6010Project/cs1610game/xcode/CMakeFiles/ALL_BUILD.dir
+/Users/koffidanhounsrou/desktop/CS6010Project/cs1610game/xcode/CMakeFiles/ZERO_CHECK.dir
