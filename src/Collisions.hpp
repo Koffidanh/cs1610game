@@ -9,5 +9,9 @@
 #define Collisions_hpp
 
 #include <stdio.h>
+#include "PlayersCar.hpp"
+#include "ComputerCar.hpp"
+#include "animals.hpp"
+
 
 #endif /* Collisions_hpp */

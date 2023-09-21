@@ -18,6 +18,7 @@
 #include <iostream>
 #include <cstdlib>
 
+class PlayerCar;
 
 class Animal {
 private:
@@ -38,22 +39,14 @@ public:
 //    void draw(sf::RenderWindow& window);
 
     void move() {
-        
-        
-       
         animal.move(0.05, 0);
-       
-        
     }
 
     void draw(sf::RenderWindow& window) {
         window.draw(animal);
 //        window.draw(animal1);
-
     }
-
-
-
-
+    
+    friend bool AnimalCollision(const Animal& animal, const PlayerCar playercar);
 };
 #endif /* animals_hpp */

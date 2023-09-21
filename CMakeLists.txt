@@ -25,7 +25,7 @@ cmake_minimum_required(VERSION 3.15)
 project(carracing)
 
 #the project contains an executable named testSFML that uses the following cpp files
-add_executable(carracing src/cargame.cpp src/animals.cpp src/animals.hpp src/ComputerCar.cpp src/ComputerCar.hpp src/PlayersCar.cpp src/PlayersCar.hpp src/Potholes.cpp src/Potholes.hpp src/world.cpp src/world.hpp  )
+add_executable(carracing src/cargame.cpp src/animals.cpp src/animals.hpp src/ComputerCar.cpp src/ComputerCar.hpp src/PlayersCar.cpp src/PlayersCar.hpp src/Potholes.cpp src/Potholes.hpp src/world.cpp src/world.hpp src/Collisions.cpp src/Collisions.hpp)
 
 #create a folder named "cmake" at the top of your project and put the
 #findSFML.cmake file in it.  This line tells Cmake to look there for
