@@ -21,7 +21,7 @@ private:
     sf::CircleShape holeShape;
  
     float xVelocity = .2f;
-    float yVelocity = .1f;
+    float yVelocity = .08f;
  
 public:
     Pothole(float startX, float startY);
@@ -39,7 +39,8 @@ public:
     void hitBottom();
  
     void update();
-//    friend bool potholeCollision(const Pothole& pothole, const PlayerCar playercar);
+    
+    friend bool potholeCollision(const Pothole& pothole, const PlayerCar& playercar);
  
 };
 #endif /* Potholes_hpp */

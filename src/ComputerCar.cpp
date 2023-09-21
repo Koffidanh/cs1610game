@@ -29,18 +29,6 @@ float ComputerCar::getXVelocity()
     return xVelocity;
 }
  
-void ComputerCar::reboundSides()
-{
-    xVelocity = -xVelocity;
-}
- 
-void ComputerCar::reboundBatOrTop()
-{
-    position.y -= (yVelocity * 30);
-    yVelocity = -yVelocity;
- 
-}
- 
 void ComputerCar::hitBottom()
 {
     position.y = 1;
@@ -49,11 +37,8 @@ void ComputerCar::hitBottom()
  
 void ComputerCar::update()
 {
-    // Update the ball position variables
     position.y += yVelocity;
-    position.x = xVelocity;
- 
-    // Move the ball and the bat
     carShape.setPosition(position);
+   
 }
 

@@ -14,6 +14,7 @@
 
 class ComputerCar;
 class Animal;
+class Pothole;
  
 class PlayerCar
 {
@@ -33,9 +34,12 @@ public:
  
     sf::RectangleShape getShape();
     
-    friend bool collision(const ComputerCar& computercar, const PlayerCar playercar);
+    friend bool collision(const ComputerCar& computercar, const PlayerCar& playercar);
     
-    friend bool AnimalCollision(const Animal& animal, const PlayerCar playercar);
+    friend bool AnimalCollision(const Animal& animal, const PlayerCar& playercar);
+    
+    friend bool potholeCollision(const Pothole& pothole, const PlayerCar& playercar);
+    
  
     void update();
     

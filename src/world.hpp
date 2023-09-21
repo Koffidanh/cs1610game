@@ -125,49 +125,34 @@ public:
     }
     
     void moveStripes() {
-         // Move all the stripes downwards
+        // Move all the stripes downwards
         
-         midStripeShape1.move(0, speed);
-         midStripeShape2.move(0, speed);
-         midStripeShape3.move(0, speed);
-         midStripeShape4.move(0, speed);
-         midStripeShape5.move(0, speed);
-         midStripeShape6.move(0, speed);
-         midStripeShape7.move(0, speed);
-         midStripeShape8.move(0, speed);
-         midStripeShape9.move(0, speed);
-         midStripeShape10.move(0, speed);
+        midStripeShape1.move(0, speed);
+        midStripeShape2.move(0, speed);
+        midStripeShape3.move(0, speed);
+        midStripeShape4.move(0, speed);
+        midStripeShape5.move(0, speed);
+        midStripeShape6.move(0, speed);
+        midStripeShape7.move(0, speed);
+        midStripeShape8.move(0, speed);
+        midStripeShape9.move(0, speed);
+        midStripeShape10.move(0, speed);
         midStripeShape11.move(0, speed);
-
-         // Reset position when a stripe reaches the bottom
-         if (midStripeShape.getPosition().y > 600) midStripeShape.setPosition((800-10)/2, 0);
-         if (midStripeShape1.getPosition().y > 1100) midStripeShape1.setPosition((800-10)/2, 0);
-         if (midStripeShape2.getPosition().y > 1100) midStripeShape2.setPosition((800-10)/2, 0);
-         if (midStripeShape3.getPosition().y > 1100) midStripeShape3.setPosition((800-10)/2, 0);
-         if (midStripeShape4.getPosition().y > 1100) midStripeShape4.setPosition((800-10)/2, 0);
-         if (midStripeShape5.getPosition().y > 1100) midStripeShape5.setPosition((800-10)/2, 0);
-         if (midStripeShape6.getPosition().y > 1100) midStripeShape6.setPosition((800-10)/2, 0);
-        if (midStripeShape7.getPosition().y > 1100) midStripeShape7.setPosition((800-10)/2, 0);
-        if (midStripeShape8.getPosition().y > 1100) midStripeShape8.setPosition((800-10)/2, 0);
-        if (midStripeShape9.getPosition().y > 1100) midStripeShape9.setPosition((800-10)/2, 0);
-        if (midStripeShape10.getPosition().y > 1100) midStripeShape10.setPosition((800-10)/2, 0);
-        if (midStripeShape11.getPosition().y > 1100) midStripeShape11.setPosition((800-10)/2, 0);
-     }
-    
-    //
-//    void Road::handleCollisions(){
-//        for (auto i= 0; i < animals.size(); i++) {
-//            if(collides(player, animals[i])){
-//                //dead
-//                reset();
-//                return;
-//                
-//            }
-//        }
-//    }
-//    //
-//    for
-    
+        
+        // Reset position when a stripe reaches the bottom
+        if (midStripeShape.getPosition().y > 600) midStripeShape.setPosition((400-10)/2, 0);
+        if (midStripeShape1.getPosition().y > 1100) midStripeShape1.setPosition((400-10)/2, 0);
+        if (midStripeShape2.getPosition().y > 1100) midStripeShape2.setPosition((400-10)/2, 0);
+        if (midStripeShape3.getPosition().y > 1100) midStripeShape3.setPosition((400-10)/2, 0);
+        if (midStripeShape4.getPosition().y > 1100) midStripeShape4.setPosition((400-10)/2, 0);
+        if (midStripeShape5.getPosition().y > 1100) midStripeShape5.setPosition((400-10)/2, 0);
+        if (midStripeShape6.getPosition().y > 1100) midStripeShape6.setPosition((400-10)/2, 0);
+        if (midStripeShape7.getPosition().y > 1100) midStripeShape7.setPosition((400-10)/2, 0);
+        if (midStripeShape8.getPosition().y > 1100) midStripeShape8.setPosition((400-10)/2, 0);
+        if (midStripeShape9.getPosition().y > 1100) midStripeShape9.setPosition((400-10)/2, 0);
+        if (midStripeShape10.getPosition().y > 1100) midStripeShape10.setPosition((400-10)/2, 0);
+        if (midStripeShape11.getPosition().y > 1100) midStripeShape11.setPosition((400-10)/2, 0);
+    }
     
 };
 

@@ -24,7 +24,7 @@ private:
     sf::RectangleShape carShape;
  
     float xVelocity = .2f;
-    float yVelocity = .1f;
+    float yVelocity = .09f;
     int score, lives;
  
 public:
@@ -34,13 +34,9 @@ public:
  
     sf::RectangleShape getShape();
     
-    friend bool collision(const ComputerCar& computercar, const PlayerCar playercar);
+    friend bool collision(const ComputerCar& computercar, const PlayerCar& playercar);
  
     float getXVelocity();
- 
-    void reboundSides();
- 
-    void reboundBatOrTop();
  
     void hitBottom();
  

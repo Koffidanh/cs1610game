@@ -27,14 +27,11 @@ sf::RectangleShape PlayerCar::getShape()
 }
 
 void PlayerCar::Movement(const sf::RenderWindow& window){
+    
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
-        if(position.x < 50){
-            position.x =0;
-        }
-        else{
             position.x +=carSpeed;
         }
-    }
+    
     else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
     {
             position.x -= carSpeed;

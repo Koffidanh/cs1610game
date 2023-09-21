@@ -62,17 +62,5 @@ void Pothole::update()
     holeShape.setPosition(position);
 }
 
-//bool potholeCollision(const Pothole& pothole, const PlayerCar playercar){
-//    //player location variable boundary
-//    auto PL = playercar.carShape.getGlobalBounds();
-//    std::array<sf::Vector2f, 4> PLcorners{{{PL.left, PL.top}, {PL.left + PL.width, PL.top}, {PL.left + PL.width, PL.top + PL.height}, {PL.left, PL.top + PL.height}}};
-//    auto CL = pothole.holeShape.getGlobalBounds();
-//    std::array<sf::Vector2f, 4> CLcorners{{{CL.left, CL.top}, {CL.left + CL.width, CL.top}, {CL.left + CL.width, CL.top + CL.height}, {CL.left, CL.top + CL.height}}};
-//        for(size_t i; i < 4; i++){
-//            if(CLcorners[i] == PLcorners[i]){
-//                return true;
-//        }
-//    }
-//    return false;
-//}
+
 

@@ -47,6 +47,6 @@ public:
 //        window.draw(animal1);
     }
     
-    friend bool AnimalCollision(const Animal& animal, const PlayerCar playercar);
+    friend bool AnimalCollision(const Animal& animal, const PlayerCar& playercar);
 };
 #endif /* animals_hpp */
