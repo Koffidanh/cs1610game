@@ -1,3 +1,0 @@
-/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeFiles/carracing.dir
-/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeFiles/ALL_BUILD.dir
-/Users/zachallred/desktop/CS6010Project/cs1610game/xcode/CMakeFiles/ZERO_CHECK.dir

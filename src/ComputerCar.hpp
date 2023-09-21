@@ -12,6 +12,8 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "PlayersCar.hpp"
+
+class PlayerCar;
  
 class ComputerCar
 {
@@ -31,6 +33,8 @@ public:
     sf::FloatRect getPosition();
  
     sf::RectangleShape getShape();
+    
+    friend bool collision(const ComputerCar& computercar, const PlayerCar playercar);
  
     float getXVelocity();
  

@@ -10,6 +10,7 @@
 #include <SFML/Graphics.hpp>
 #include "PlayersCar.hpp"
 #include "ComputerCar.hpp"
+#include "Potholes.hpp"
 int main()
 {
     int windowHeight = 1100;
@@ -23,6 +24,9 @@ int main()
     PlayerCar playercar (windowWidth / 2, windowHeight/ 2);
     ComputerCar computerCar (windowWidth / 2, 1);
     ComputerCar computerCar2 (windowWidth / 2, 10);
+//------------------------------------------------------//
+    Pothole pothole (windowHeight , windowHeight-500);
+
     while (window.isOpen())
     {
         sf::Event event;
@@ -73,6 +77,43 @@ int main()
                 }
             }
             
+            //-----------------------------------------------------//
+            
+            if (pothole.getPosition().top > windowHeight)
+            {
+                // reverse the ball direction
+                pothole.hitBottom();
+                
+                // Remove a life
+                score +=10;
+                
+            }
+            
+            if (pothole.getPosition().top < 0)
+            {
+                pothole.reboundBatOrTop();
+                
+                // Add a point to the players score
+                score++;
+                
+            }
+            
+            if (pothole.getPosition().left < 0 || pothole.getPosition().left + 10 > windowWidth)
+            {
+                pothole.reboundSides();
+            }
+            
+            if (pothole.getPosition().intersects(playercar.getPosition()))
+            {
+                lives--;
+                if (lives < 1) {
+                    // reset the score
+                    score = 0;
+                    // reset the lives
+                    lives = 3;
+                }
+            }
+            pothole.update();
             computerCar.update();
             playercar.update();
             
@@ -83,6 +124,7 @@ int main()
             road.draw(window);
             animal.draw(window);
             animal.move();
+            window.draw(pothole.getShape());
             
             
             window.draw(computerCar.getShape());
