@@ -34,6 +34,7 @@ private:
     sf::RectangleShape midStripeShape8;
     sf::RectangleShape midStripeShape9;
     sf::RectangleShape midStripeShape10;
+    sf::RectangleShape midStripeShape11;
 
 
     sf::RectangleShape leftStripeShape;
@@ -98,6 +99,10 @@ public:
         midStripeShape10.setSize(sf::Vector2f(10, 50));
         midStripeShape10.setFillColor(sf::Color::White);
         midStripeShape10.setPosition((width-10)/2 , 1000);
+        // Initialize center next stripe
+        midStripeShape11.setSize(sf::Vector2f(10, 50));
+        midStripeShape11.setFillColor(sf::Color::White);
+        midStripeShape11.setPosition((width-10)/2 , 1100);
     }
 
     void draw(sf::RenderWindow& window) {
@@ -115,6 +120,7 @@ public:
         window.draw(midStripeShape8);
         window.draw(midStripeShape9);
         window.draw(midStripeShape10);
+        window.draw(midStripeShape11);
 
     }
     
@@ -131,6 +137,7 @@ public:
          midStripeShape8.move(0, speed);
          midStripeShape9.move(0, speed);
          midStripeShape10.move(0, speed);
+        midStripeShape11.move(0, speed);
 
          // Reset position when a stripe reaches the bottom
          if (midStripeShape.getPosition().y > 600) midStripeShape.setPosition((800-10)/2, 0);
@@ -144,7 +151,24 @@ public:
         if (midStripeShape8.getPosition().y > 1100) midStripeShape8.setPosition((800-10)/2, 0);
         if (midStripeShape9.getPosition().y > 1100) midStripeShape9.setPosition((800-10)/2, 0);
         if (midStripeShape10.getPosition().y > 1100) midStripeShape10.setPosition((800-10)/2, 0);
+        if (midStripeShape11.getPosition().y > 1100) midStripeShape11.setPosition((800-10)/2, 0);
      }
+    
+    //
+//    void Road::handleCollisions(){
+//        for (auto i= 0; i < animals.size(); i++) {
+//            if(collides(player, animals[i])){
+//                //dead
+//                reset();
+//                return;
+//                
+//            }
+//        }
+//    }
+//    //
+//    for
+    
+    
 };
 
 

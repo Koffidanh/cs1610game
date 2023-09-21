@@ -7,5 +7,8 @@
 
 #include "animals.hpp"
 
-
+//void Animal::draw(sf::RenderWindow& window){
+//    animal.draw(window);
+//    
+//}
 

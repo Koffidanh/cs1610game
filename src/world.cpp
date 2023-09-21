@@ -1,15 +1,16 @@
+////
+////  world.cpp
+////  carracing
+////
+////  Created by Koffi Danhounsrou on 9/19/23.
+////
 //
-//  world.cpp
-//  carracing
+//#include "world.hpp"
+//#include <SFML/Graphics.hpp>
+//#include <random>
 //
-//  Created by Koffi Danhounsrou on 9/19/23.
 //
-
-#include "world.hpp"
-#include <SFML/Graphics.hpp>
-
-
-//void world::loop(){
+//void World::loop(){
 //    
 //    // create the window
 //    sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
@@ -39,4 +40,4 @@
 //        window.display();
 //    }
 //}
-
+//

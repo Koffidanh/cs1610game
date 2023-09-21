@@ -10,13 +10,14 @@
 #include <stdio.h>
 #pragma once
 #include <SFML/Graphics.hpp>
- 
+class PlayerCar;
+
 class Pothole
 {
 private:
     sf::Vector2f position;
  
-    // A RectangleShape object called ref
+    // A Cicle Shape object called ref
     sf::CircleShape holeShape;
  
     float xVelocity = .2f;
@@ -38,6 +39,7 @@ public:
     void hitBottom();
  
     void update();
+//    friend bool potholeCollision(const Pothole& pothole, const PlayerCar playercar);
  
 };
 #endif /* Potholes_hpp */
