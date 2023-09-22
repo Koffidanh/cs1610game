@@ -29,7 +29,6 @@ public:
 public:
     void WorldBuilder();
     sf::RenderWindow window;
-    void ScoreTracker();
 };
 
 #endif /* WorldBuilder_hpp */

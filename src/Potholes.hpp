@@ -21,7 +21,7 @@ private:
     sf::CircleShape holeShape;
  
     float xVelocity = .2f;
-    float yVelocity = .08f;
+    float yVelocity = .02f;
  
 public:
     Pothole(float startX, float startY);

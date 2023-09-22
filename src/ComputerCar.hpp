@@ -24,7 +24,7 @@ private:
     sf::RectangleShape carShape;
  
     float xVelocity = .2f;
-    float yVelocity = .09f;
+    float yVelocity = .06f;
     int score, lives;
  
 public:

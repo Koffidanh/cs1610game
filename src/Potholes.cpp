@@ -49,14 +49,12 @@ void Pothole::reboundBatOrTop()
 void Pothole::hitBottom()
 {
     position.y = 1;
-    position.x = 500;
 }
  
 void Pothole::update()
 {
     // Update the ball position variables
     position.y += yVelocity;
-    position.x = xVelocity;
  
     // Move the ball and the bat
     holeShape.setPosition(position);

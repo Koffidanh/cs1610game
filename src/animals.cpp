@@ -7,8 +7,40 @@
 
 #include "animals.hpp"
 
-//void Animal::draw(sf::RenderWindow& window){
-//    animal.draw(window);
-//    
-//}
+Animal::Animal(float startX, float startY)
+{
+    position.x = startX;
+    position.y = startY;
+ 
+    animalShape.setSize(sf::Vector2f(50, 75));
+    animalShape.setPosition(position);
+}
+sf::FloatRect Animal::getPosition()
+{
+    return animalShape.getGlobalBounds();
+}
+ 
+sf::RectangleShape Animal::getShape()
+{
+    return animalShape;
+}
+ 
+float Animal::getXVelocity()
+{
+    return xVelocity;
+}
+ 
+void Animal::hitBottom()
+{
+    position.x = 1;
+}
+ 
+void Animal::update()
+{
+    position.x += xVelocity;
+    animalShape.setPosition(position);
+   
+}
+
+
 

@@ -32,7 +32,6 @@ float ComputerCar::getXVelocity()
 void ComputerCar::hitBottom()
 {
     position.y = 1;
-    position.x = 500;
 }
  
 void ComputerCar::update()

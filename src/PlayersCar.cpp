@@ -29,22 +29,37 @@ sf::RectangleShape PlayerCar::getShape()
 void PlayerCar::Movement(const sf::RenderWindow& window){
     
     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
+        if (position.x < 300) {
             position.x +=carSpeed;
+        } else position.x = 300;
+            
         }
     
     else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
     {
+        
+        if (position.x > 0) {
             position.x -= carSpeed;
+        } else position.x = 0;
+            
     }
     else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
     {
-        // move left
+        
+        if (position.y > 150 && position.y < 1500) {
             position.y -= carSpeed;
+        } else position.y = 150;
+        
+            
     }
     else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
     {
-        // move right...
+        
+        if (position.y < 780) {
             position.y += carSpeed;
+        } else position.y = 780;
+        
+            
     }
 
 }
