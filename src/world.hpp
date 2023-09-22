@@ -8,7 +8,7 @@
 #ifndef world_hpp
 #define world_hpp
 
-
+#pragma once
 #include <SFML/Graphics.hpp>
 #include <stdio.h>
 
@@ -20,7 +20,9 @@
 
 class Road {
 private:
-    float speed; // Add a speed parameter
+    // Add a speed parameter
+    float speed;
+    //objects for building road stripes.
     sf::RectangleShape roadShape;
     sf::RectangleShape rightStripeShape;
     sf::RectangleShape midStripeShape;
@@ -35,12 +37,8 @@ private:
     sf::RectangleShape midStripeShape9;
     sf::RectangleShape midStripeShape10;
     sf::RectangleShape midStripeShape11;
-
-
     sf::RectangleShape leftStripeShape;
     
-    
-
 public:
     Road(int width, int height, float s) : speed(s) {
         // Initialize road
@@ -55,7 +53,7 @@ public:
         leftStripeShape.setSize(sf::Vector2f(10, height));
         leftStripeShape.setFillColor(sf::Color::White);
         leftStripeShape.setPosition(0 , 0);
-//         Initialize center stripe
+        //Initialize center stripe
         midStripeShape.setSize(sf::Vector2f(10, 50));
         midStripeShape.setFillColor(sf::Color::White);
         midStripeShape.setPosition((width-10)/2 , 0);
@@ -104,7 +102,7 @@ public:
         midStripeShape11.setFillColor(sf::Color::White);
         midStripeShape11.setPosition((width-10)/2 , 1100);
     }
-
+//draw road.
     void draw(sf::RenderWindow& window) {
         window.draw(roadShape);
         window.draw(rightStripeShape);
@@ -123,10 +121,9 @@ public:
         window.draw(midStripeShape11);
 
     }
-    
+    //move stripes on road.
     void moveStripes() {
         // Move all the stripes downwards
-        
         midStripeShape1.move(0, speed);
         midStripeShape2.move(0, speed);
         midStripeShape3.move(0, speed);
@@ -153,9 +150,5 @@ public:
         if (midStripeShape10.getPosition().y > 1100) midStripeShape10.setPosition((400-10)/2, 0);
         if (midStripeShape11.getPosition().y > 1100) midStripeShape11.setPosition((400-10)/2, 0);
     }
-    
 };
-
-
-
 #endif /* world_hpp */

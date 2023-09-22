@@ -1,3 +1,4 @@
+
 #include <SFML/Graphics.hpp>
 #include <stdio.h>
 #include <string>
@@ -11,10 +12,13 @@
 #include "ComputerCar.hpp"
 #include "Potholes.hpp"
 #include "WorldBuilder.hpp"
+#include "Testing.hpp"
 int main()
 {
+    //initialize game.
     World world;
     world.WorldBuilder();
-    
+    TestPlayerCollisions();
+    TestObjectData();
     return 0;
 }
