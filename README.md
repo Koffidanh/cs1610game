@@ -1,6 +1,6 @@
 # Car Racing Game
 
-A C++ car racing game built using the **SFML** library, featuring real-time collision detection between player cars, computer cars, animals, and environmental obstacles like potholes. The game adjusts player score and lives based on interactions with these objects.
+A C++ car racing game built using the SFML library, developed as a collaborative project by a team of two. The game features real-time collision detection between player cars, computer-controlled cars, animals, and environmental obstacles such as potholes. Player score and lives are updated dynamically based on in-game interactions.
 
 ## Features
 
